@@ -1,0 +1,236 @@
+* {
+  margin : 0;
+  padding: 0;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: disc;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+/*CSS reset end*/
+body {
+  width: 600px;
+  vertical-align: middle; 
+  margin-left: auto;
+  margin-right: auto;
+  border-color: white;
+  background: gray;
+  font-family: Arial, sans-serif;
+  line-height: 100%;
+  font-size: small;
+  text-align: justify;
+}
+.basisHead, .basisMidd, .basisFoot {
+  width: 600px;
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 10px;
+}
+footer, div, header {
+  padding: 3px;
+}
+footer {
+  text-align: center;
+  font-size: x-small;
+}
+header {
+  height: 90px;
+}
+.centerHeadMenu {
+  clear: left;
+  margin: 0 160px 90px;
+}
+img {
+  float: left;
+  margin-right: 15px;
+}
+.nameSite {
+  margin: 30px;
+}
+.info {
+  width: 160px;
+  height: auto;
+  background-color: silver;
+  border-style: solid;
+  border-color: silver;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 5px;
+  float: right;
+  margin-left: 5px;
+  text-align: justify;
+  font-size: x-small;
+}
+ul li {
+  margin: 0; /* Обнуляем значение отступов */
+  padding: 1px;
+  font-size: small;
+  display: inline;
+}
+ul {
+  position: relative;
+  /*list-style: none;  Для списка убираем маркеры */
+  margin: 0; /* Нет отступов вокруг */
+  padding: 0; /* Убираем поля вокруг текста */
+  font-size: 10pt; /* Размер названий в пункте меню */
+}
+li ul {
+  position: absolute; /* Подменю позиционируются  */
+  display: none; /* Скрываем подменю */
+  margin-left: 1px; /* Сдвигаем подменю вправо */
+  margin-top: 5px; /* Сдвигаем подменю вверх */
+}
+li a {
+  display: inline; /* Ссылка как блочный элемент */
+  border-bottom: none; /* Границу снизу не проводим */
+}
+li:hover ul { 
+  display: block; /* При выделении пункта курсором мыши отображается подменю */
+  width: 65px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 5px;
+  padding: 3px;
+  position: absolute;
+  margin-left: 57px; /* Сдвигаем подменю вправо */
+  margin-top: -1px;
+  background-color: white;
+}
+h1 {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-size: x-large; 
+  font-weight: bolder;
+  padding-top: 0;
+  padding-bottom: 0;
+} 
+h2 {
+  font-style: normal;
+  font-size: large;
+  font-weight: bolder;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+h3 {
+  font-style: normal;
+  font-size: medium;
+  font-weight: bolder;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+h4 {
+  font-weight: bolder;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  word-spacing: 20px; 
+}
+i, em, dfn {
+  font-style: italic;
+}
+small {
+  font-size: small;
+}
+strong {
+  font-weight: bolder;
+}
+ul.listUl li {
+  display: list-item;
+  margin-left: 15px;
+  padding-left: 5px;
+  list-style-position: inside ;
+}
+.normalFont {
+  font-weight: lighter;
+}
+dl dt {
+  margin-left: 15px;
+}
+dd {
+  margin-left: 35px;
+}
+/*table {
+  display: block;
+  /*table-layout: auto;*/
+  /*border-collapse: separate;
+  width: 35%;
+  height: 50%;
+  margin-left: 200px;
+}
+.calcMidd {
+  border-collapse: separate;
+}
+
+.but7, .but8, .but9, .butSlash, .butC, .but4, .but5, .but6, .butStar,
+ .butSymb, .but1, .but2, .but3, .butMin, .butDot, .butPlus {
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-right: 1px;
+}
+.butt0 {
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-right: 1px;
+}
+.buttEqu {butt
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-right: 1px;
+}
+.but, .but7, .but8, .but9, .butSlash, .butC, .but4, .but5, .but6, .butStar,
+ .butSymb, .but1, .but2, .but3, .butMin, .butDot, .butPlus, .but0, .butEqu:hover {
+  cursor: pointer;
+}
+.inputNum {
+  /*display: table;*/
+  /*width: 203px;
+}*/
+table {
+  margin: auto;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 2px;
+  padding: auto;
+}
+.butt {
+  width: 35px;
+  height: 25px;
+}
+.butt0 {
+  width: 70px;
+  height: 25px;
+}
+.buttEqu {
+  width: 35px;
+  height: 50px;
+}
+.inputNum {
+  display: table-cell;
+  width: 250px;
+  height: 25px;
+  border-width: 1px;
+}
+table tr td input {
+  width: 98%;
+  height: 100%;
+}

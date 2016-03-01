@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Калькулятор</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="styleCSS.css" />
+</head>
+
+<body>
+    <header class="basisHead">
+        <a href="index.html"><img src="webLogo.png" alt="Логотип курса Web-технологии" height="77" /></a>
+        <h1 class="nameSite">Основы Web-технологий</h1>
+        <ul class="centerHeadMenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="web.html">Web-технологии</a>
+                <ul>
+                    <li><a href="html.html">HTML5</a></li>
+                    <li><a href="css.html">CSS3</a></li>
+                    <li><a href="js.html">JavaScript</a></li>
+                </ul>
+            </li>
+            <li><a href="calc.html">Калькулятор</a></li>
+            <li><a href="test.html">Тест</a></li>
+        </ul>
+    </header>
+    <div class="basisMidd">
+        <form id="calc" name="calc">
+            <table border="0" class="calcMidd">
+                <tr>
+                    <td colspan="5" class="inputNum">
+                        <input type="text" name="textDisp" vallue="0" id="enterNum" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="butt">
+                        <input type="button" name="button" value="7" id="butt7" />
+                    </td>
+                    <td class="butt">
+                        <input type="button" name="button" value="8" id="butt8" />
+                    </td>
+                    <td class="butt">
+                        <input type="button" name="button" value="9" id="butt9" />
+                    </td>
+                    <td class="butt">
+                        <input type="button" name="button" value="/" id="buttSlash" />
+                    </td>
+                    <td class="butt">
+                        <input type="button" name="button" value="C" id="buttC" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="butt">
+                        <input type="button" name="button" value="4" id="butt4" />
+                    </td>
+                    <td class="butt">
+                        <input type="button" name="button" value="5" id="butt5" />
+                    </td>
+                    <td class="butt">
+                        <input type="button" name="button" value="6" id="butt6" />
+                    </td>
+                    <td class="butt">
+                        <input type="button" name="button" value="*" id="buttStar" />
+                    </td>
+                    <td class="butt">
+                        <input type="button" name="button" value="&plusmn;" id="buttMinPlus" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="butt">
+                        <input type="button" name="button" value="1" id="butt1" />
+                    </td>
+                    <td class="butt">
+                        <input type="button" name="button" value="2" id="butt2" />
+                    </td>
+                    <td class="butt">
+                        <input type="button" name="button" value="3" id="butt3" />
+                    </td>
+                    <td class="butt">
+                        <input type="button" name="button" value="-" id="buttMinus" />
+                    </td>
+                    <td rowspan="2" class="buttEqu">
+                        <input type="button" name="button" value="=" id="buttEqually" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="butt0">
+                        <input type="button" name="button" value="0" id="butt0" />
+                    </td>
+                    <td class="butt">
+                        <input type="button" name="button" value="." id="buttDot" />
+                    </td>
+                    <td class="butt">
+                        <input type="button" name="button" value="+" id="buttPlus" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <footer class="basisFoot">
+        <address>
+            <a href="mailto:mail@mail"><i>Пишите: mail@mail</i></a>
+            <br />
+        </address>
+        &copy; Чалая Ю. В., 2016
+    </footer>
+    <script src="jsCalc.js"></script>
+</body>
+
+</html>
