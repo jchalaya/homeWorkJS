@@ -34,6 +34,9 @@ function operation (op) {
         inputStore *= parseFloat(input);
       else
         inputStore = parseFloat(input);
+        if (inputStore == "Infinity"){
+          inputStore = "На ноль делить нельзя!";
+        }
       formCalc.textDisp.value = inputStore;
       selectOp = op;
     }
